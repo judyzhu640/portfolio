@@ -1,0 +1,296 @@
+.marketing-cases-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+
+    .marketing-cases-header {
+        text-align: center;
+        margin-bottom: 60px;
+
+        .marketing-cases-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .marketing-cases-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-color-2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    .case-selector {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+
+        .case-button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            }
+
+            &.active {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                transform: translateY(-2px);
+            }
+
+            .case-number {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .case-content {
+        .case-info-row {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+
+            .case-header-column {
+                .case-header {
+                    background: linear-gradient(
+                        135deg,
+                        #667eea 0%,
+                        #764ba2 100%
+                    );
+                    color: white;
+                    padding: 2.5rem;
+                    border-radius: 20px;
+                    margin-bottom: 2rem;
+
+                    .case-main-title {
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                        margin-bottom: 0.8rem;
+                    }
+
+                    .case-subtitle-text {
+                        font-size: 1.2rem;
+                        opacity: 0.9;
+                        margin-bottom: 1.2rem;
+                    }
+
+                    .case-description {
+                        line-height: 1.7;
+                        font-size: 1rem;
+                    }
+                }
+
+                .case-tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.8rem;
+
+                    .case-tag {
+                        background: linear-gradient(
+                            135deg,
+                            #667eea 0%,
+                            #764ba2 100%
+                        );
+                        color: white;
+                        padding: 0.6rem 1.2rem;
+                        border-radius: 25px;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .case-results-column {
+                .case-results {
+                    background: white;
+                    padding: 2.5rem;
+                    border-radius: 20px;
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+                    height: fit-content;
+
+                    .results-title {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        margin-bottom: 2rem;
+                        color: var(--text-color);
+                        text-align: center;
+                    }
+
+                    .results-list {
+                        .result-item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 1.5rem;
+                            background: #f8f9fa;
+                            border-radius: 12px;
+                            margin-bottom: 1rem;
+
+                            .result-metric {
+                                font-weight: 600;
+                                color: var(--text-color);
+                                font-size: 0.95rem;
+                            }
+
+                            .result-value {
+                                font-size: 1.8rem;
+                                font-weight: 700;
+                                background: linear-gradient(
+                                    135deg,
+                                    #667eea 0%,
+                                    #764ba2 100%
+                                );
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .case-gallery-row {
+            .case-gallery {
+                max-width: 100%;
+                margin: 0 auto;
+
+                .main-image-container {
+                    background: white;
+                    padding: 3rem;
+                    border-radius: 25px;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 2rem;
+
+                    .image-display {
+                        position: relative;
+                        width: 100%;
+                        min-height: 400px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        background: #f8f9fa;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .case-image {
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            max-height: 90%;
+                            object-fit: cover;
+                            object-position: top;
+                            border-radius: 15px;
+                        }
+
+                        .nav-arrow {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: rgba(0, 0, 0, 0.7);
+                            color: white;
+                            border: none;
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            font-size: 2rem;
+                            cursor: pointer;
+                            z-index: 10;
+
+                            &:hover {
+                                background: rgba(0, 0, 0, 0.9);
+                            }
+
+                            &.nav-prev {
+                                left: 2rem;
+                            }
+
+                            &.nav-next {
+                                right: 2rem;
+                            }
+                        }
+                    }
+
+                    .image-counter {
+                        text-align: center;
+                        margin-top: 1.5rem;
+                        font-weight: 600;
+                        color: var(--text-color-2);
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .thumbnail-gallery {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+
+                    .thumbnail {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 15px;
+                        border: none;
+                        background: #e9ecef;
+                        cursor: pointer;
+                        font-weight: 700;
+                        font-size: 1.2rem;
+
+                        &:hover {
+                            background: linear-gradient(
+                                135deg,
+                                #667eea 0%,
+                                #764ba2 100%
+                            );
+                            color: white;
+                        }
+
+                        &.active {
+                            background: linear-gradient(
+                                135deg,
+                                #667eea 0%,
+                                #764ba2 100%
+                            );
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 用白色条遮住水印
+.image-display {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px; // 调整高度来完全盖住水印
+        background: white; // 白色遮罩
+        z-index: 5;
+    }
+}
+
+// 确保箭头在遮罩上方
+.nav-arrow {
+    z-index: 10 !important;
+}

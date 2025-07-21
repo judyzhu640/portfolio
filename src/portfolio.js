@@ -4,6 +4,9 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import { designs } from "./designs";
+
+export { designs };
 
 // Splash Screen
 
@@ -20,26 +23,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Ziyue Zhu",
-  title: "Hi！ I'm Ziyue",
+  username: "Judy Zhu",
+  title: "Hi！ I'm Judy",
   subTitle: emoji(
-    "Results-driven marketing specialist passionate about crafting strategies that connect, engage, and convert. Skilled in SEO, social media, and data-led campaigns. 📊💡",
+    "Content marketing specialist who creates viral content that converts - including TikTok content with 500K+ views. Experienced across healthcare and fashion industries, with expertise in marketingng campaign, SEO content creation, social media strategy, and performance analytics. 📊💡",
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/12SsoAdr7N8iGI2f5cWnAzqo5xYI34Ar2/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  linkedin: "https://www.linkedin.com/in/ziyue-zhu/",
+  gmail: "judyzhu640@gmail.com",
+  github: "https://github.com/judyzhu640/judyzhu",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true, // Set true to display this section, defaults to false
@@ -51,11 +50,18 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Marketing strategies built on insight, creativity, and data 📈",
   skills: [
-    emoji("⚡ SEO strategy, keyword research, and on-page optimization"),
-    emoji("⚡ Social media content planning and cross-platform management"),
-    emoji("⚡ Email marketing (Mailchimp), newsletter design & A/B testing"),
-    emoji("⚡ Google Analytics & Search Console for campaign evaluation"),
-    emoji("⚡ Content creation using Canva, Notion, and AI tools"),
+    emoji("⚡ Content strategy development and editorial calendar planning"),
+    emoji(
+      "⚡ SEO-optimized blog writing, video scripts, and long-form content creation",
+    ),
+    emoji("⚡ Social media content creation and cross-platform storytelling"),
+    emoji(
+      "⚡ Email marketing campaigns, newsletter design & A/B testing (Mailchimp)",
+    ),
+    emoji("⚡ Video content planning and TikTok viral content creation"),
+    emoji(
+      "⚡ Performance tracking and content optimization using data insights",
+    ),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -67,11 +73,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-chart-line",
     },
     {
-      skillName: "Google Sheets",
+      skillName: "Google Ads",
       fontAwesomeClassname: "fas fa-table",
     },
     {
-      skillName: "Figma",
+      skillName: "HubSpot",
       fontAwesomeClassname: "fas fa-pencil-ruler",
     },
     {
@@ -83,11 +89,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-envelope",
     },
     {
-      skillName: "Instagram",
+      skillName: "PhotoShop",
       fontAwesomeClassname: "fab fa-instagram",
     },
     {
-      skillName: "Canva",
+      skillName: "Illustrator",
       fontAwesomeClassname: "fas fa-paint-brush",
     },
   ],
@@ -101,23 +107,28 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Boston University",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/BUlogo.png"),
       subHeader: "Master of Science in Journalism",
       duration: "September 2023 - May 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc:
+        "Ranked top 10% in the Program. Took course about email marketing and graphic design. Founded a weekly newsletter focused on women-centered content and digital trends.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Designed logos and visuals in Photoshop. Wrote trending but brand-aligned content.",
+        "Optimized campaigns through A/B testing and audience engagement",
       ],
     },
     {
       schoolName: "University of Nottingham",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/UNNClogo.png"),
       subHeader: "Bachelor of Arts with Honours in International Studies",
       duration: "September 2019 - April 2023",
       desc:
-        "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"],
+        "Organized over 10 alumi events as Alumi Association President. Founded Gen-Z modeling cultural brand",
+      descBullets: [
+        "Led digital marketing at Modex, executing multi-channel campaigns that reached 20M+ users and drove 640K+ engagements",
+        "Secured corporate sponsorships and partnered with local businesses to launch exclusive alumni discount programs",
+        "Designed event materials and communication assets to align with brand identity and drive engagement",
+      ],
     },
   ],
 };
@@ -128,15 +139,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%", //Insert relative proficiency in percentage
+      Stack: "Viral Content", //Insert stack or technology you have experience in
+      progressPercentage: "80%", //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "SEO/Social Media Management",
       progressPercentage: "70%",
     },
     {
-      Stack: "Programming",
+      Stack: "Graphic Design",
       progressPercentage: "60%",
     },
   ],
@@ -149,21 +160,20 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Marketing Manager",
+      role: "Marketing Coordinator",
       company: "Modex",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/Modexlogo.png"),
       date: "Sep 2020 – June 2023",
       descBullets: [
         "Collaborated with model and operation teams to develop and execute multi-channel marketing strategies, managing project lifecycles from initial planning through performance optimization",
         "Coordinated partnership initiatives with major brands (Peacebird, Boy London), managing relationship development, contract negotiations, and collaborative promotional activities to increase market visibility",
         "Supervised creation of 30+ marketing materials and brand communications, ensuring consistency with brand standards while achieving 20M+ cumulative reach and 640K+ engagements",
-        "Monitored campaign effectiveness through analytics platforms, preparing comprehensive performance reports for leadership and adjusting strategies based on market response data",
       ],
     },
     {
       role: "Event Coordinator",
       company: "Nottingham Alumni Association",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/NAAN.png"),
       date: "Sep 2020 – June 2022",
       descBullets: [
         "Coordinated large-scale events including Alumni Homecoming and Alumni Wedding from concept to completion, managing logistics, vendor coordination, and attendee experience for 1000+ participants",
@@ -174,7 +184,7 @@ const workExperiences = {
     {
       role: "Digital Marketing Intern",
       company: "Ruder Finn",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/rflogo.png"),
       date: "June 2021 – Sep 2021",
       descBullets: [
         "Coordinated marketing proposal development for high-profile client engagements including China International Import Expo, supporting account teams with research and presentation preparation",
@@ -202,7 +212,8 @@ const bigProjects = {
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Pink World",
-      projectDesc: "A weekly newsletter focus on women empowerment",
+      projectDesc:
+        "A self-initiated weekly newsletter spotlighting women-centered stories, trends, and voices in digital media. I conceptualized, wrote, designed, and distributed each edition independently, applying end-to-end email marketing strategies using Mailchimp",
       footerLink: [
         {
           name: "Visit Website",
@@ -212,7 +223,7 @@ const bigProjects = {
       ],
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -225,7 +236,7 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Ana",
+      title: "Digital Marketing & E-commerce",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
@@ -239,7 +250,7 @@ const achievementSection = {
       ],
     },
     {
-      title: "Google Assistant Action",
+      title: "Google Ads",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
       image: require("./assets/images/googleAssistantLogo.webp"),
@@ -254,7 +265,7 @@ const achievementSection = {
     },
 
     {
-      title: "PWA Web App Developer",
+      title: "Google Analytics",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
@@ -288,7 +299,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -307,7 +318,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/",
     },
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -320,7 +331,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo",
   ],
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -333,11 +344,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Let’s Connect 📩"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com",
+    "I’m currently open to full-time opportunities in marketing, especially in digital strategy, content creation, and email campaigns. Feel free to reach out if you think we’d be a good fit.",
+  number: "+1 572-528-0711",
+  email_address: "judyzhu640@gmail.com",
 };
 
 // Twitter Section
@@ -349,6 +360,88 @@ const twitterDetails = {
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
+// Marketing Cases Section - 在export之前添加这段代码
+const marketingCases = {
+  title: "Marketing Cases",
+  subtitle: "Real-world marketing campaigns delivering measurable results",
+  cases: [
+    {
+      id: 1,
+      title: "Pink World Newsletter",
+      subtitle: "Gen Z-Focused Email Marketing Strategy",
+      description:
+        "Developed and executed a comprehensive email marketing strategy for a Gen Z-targeted newsletter. Focused on cultural trends and engaging content to build a loyal subscriber base while optimizing campaign performance through data-driven insights and A/B testing methodologies.",
+      tags: [
+        "Email Marketing",
+        "Gen Z Engagement",
+        "Content Strategy",
+        "A/B Testing",
+      ],
+      results: [
+        { metric: "Click-through Rate Increase", value: "20%" },
+        { metric: "Subscriber Growth (3 weeks)", value: "100+" },
+        { metric: "Weekly Content Consistency", value: "100%" },
+      ],
+      images: [
+        require("./assets/images/case1-img1.png"),
+        require("./assets/images/case1-img2.png"),
+        require("./assets/images/case1-img3.png"),
+        require("./assets/images/case1-img4.png"),
+        require("./assets/images/case1-img5.png"),
+      ],
+      color: "from-purple-500 to-pink-600",
+    },
+    {
+      id: 2,
+      title: "Modex Social Media Campaign",
+      subtitle: "Viral Content & Brand Partnership Strategy",
+      description:
+        "Led comprehensive social media marketing strategy for fashion startup, managing full content pipeline from ideation to post-production. Focused on short-form video content for TikTok and Xiaohongshu (RED), while developing strategic partnerships with major fashion brands to amplify reach and engagement.",
+      tags: [
+        "Social Media",
+        "Video Production",
+        "Brand Partnerships",
+        "Viral Marketing",
+      ],
+      results: [
+        { metric: "Total Video Views", value: "20M+" },
+        { metric: "Engagement Interactions", value: "640K+" },
+        { metric: "Single Campaign Reach", value: "500K+" },
+      ],
+      images: [
+        require("./assets/images/case2-img1.png"),
+        require("./assets/images/case2-img2.png"),
+        require("./assets/images/case2-img3.png"),
+      ],
+      color: "from-pink-500 to-orange-500",
+    },
+    {
+      id: 3,
+      title: "Milford Daily News SEO Strategy",
+      subtitle: "Local Journalism with High Search Impact",
+      description:
+        "As a content intern, I created and optimized SEO-friendly local news stories that boosted the publication’s digital performance. My work directly contributed to higher search visibility and greater community engagement on town-specific articles.",
+      tags: [
+        "SEO Optimization",
+        "Content Writing",
+        "Analytics",
+      ],
+      results: [
+        { metric: "SEO Articles Published", value: "10+" },
+        { metric: "Google First-Page Ranking", value: "10+" },
+        { metric: "Avg. Session Duration Growth", value: "15%" },
+      ],
+      images: [
+        require("./assets/images/case3-img1.png"),
+        require("./assets/images/case3-img2.png"),
+        require("./assets/images/case3-img3.png"),
+      ],
+      color: "from-blue-500 to-teal-600",
+    },
+  ],
+  display: true,
+};
+
 export {
   achievementSection,
   bigProjects,
@@ -358,6 +451,7 @@ export {
   greeting,
   illustration,
   isHireable,
+  marketingCases,
   openSource,
   podcastSection,
   resumeSection,
